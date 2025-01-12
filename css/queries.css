@@ -1,0 +1,22 @@
+/**************************/
+/* BELOW 480px (mobiles) (480/16=30em) */
+/**************************/
+
+@media (max-width: 30em) {
+  .container {
+    max-width: 32.7rem;
+  }
+
+  .tag-text,
+  .published-day-text {
+    font-size: 1.2rem;
+  }
+
+  .title-text a {
+    font-size: 2rem;
+  }
+
+  .description-text {
+    font-size: 1.4rem;
+  }
+}
