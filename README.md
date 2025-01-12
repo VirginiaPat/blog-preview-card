@@ -23,8 +23,8 @@ The challenge was to build out a blog preview card and get it looking as close t
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/VirginiaPat/blog-preview-card.git)
+- Live Site URL: [Netlify](https://blog-preview-card-virgi.netlify.app/)
 
 ### Built with
 
