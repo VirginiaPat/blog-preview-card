@@ -4,19 +4,19 @@
 
 @media (max-width: 30em) {
   .container {
-    max-width: 32.7rem;
+    width: calc((327 / 16) * 1rem);
   }
 
   .tag-text,
   .published-day-text {
-    font-size: 1.2rem;
+    font-size: calc((12 / 16) * 1rem);
   }
 
   .title-text a {
-    font-size: 2rem;
+    font-size: calc((20 / 16) * 1rem);
   }
 
   .description-text {
-    font-size: 1.4rem;
+    font-size: calc((14 / 16) * 1rem);
   }
 }

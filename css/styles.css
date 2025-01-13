@@ -1,15 +1,102 @@
+/* CSS RESET---------------------------------------------------- */
 * {
   padding: 0;
   margin: 0;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
+/* Prevent font size inflation */
 html {
-  font-size: 62.5%;
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
 }
 
 body {
-  padding: 1.6rem;
+  padding: calc((32 / 16) * 1rem);
   font-family: "Figtree", Arial, sans-serif;
   background-color: hsl(47, 88%, 63%);
 
@@ -18,20 +105,21 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100svh;
-  gap: 2rem;
+  gap: calc((20 / 16) * 1rem);
 }
 
+/* BLOG-PREVIEW CARD------------------------------------------ */
 .container {
-  max-width: 38.4rem;
+  max-width: calc((384 / 16) * 1rem);
   border: 1px solid hsl(0, 0%, 7%);
   background-color: hsl(0, 0%, 100%);
   border-radius: 20px;
-  box-shadow: 0.8rem 0.8rem 0rem rgba(0, 0, 0, 1);
+  box-shadow: 8px 8px 0px rgba(0, 0, 0, 1);
 
-  padding: 2.4rem;
+  padding: calc((24 / 16) * 1rem);
   display: flex;
   flex-direction: column;
-  gap: 2.4rem;
+  gap: calc((24 / 16) * 1rem);
 }
 
 .illustration-image {
@@ -45,7 +133,7 @@ body {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: calc((12 / 16) * 1rem);
 }
 
 .tag-text,
@@ -53,9 +141,9 @@ body {
 .title-text a,
 .description-text,
 .name-text {
-  line-height: 150%;
+  line-height: 1.5;
   color: hsl(0, 0%, 7%);
-  font-size: 1.4rem;
+  font-size: calc((14 / 16) * 1rem);
   font-weight: 500;
 }
 
@@ -63,6 +151,10 @@ body {
   background-color: hsl(47, 88%, 63%);
   border-radius: 3px;
   padding: 0.4rem 1.2rem 0.4rem 1.2rem;
+  padding-top: calc((4 / 16) * 1rem);
+  padding-right: calc((12 / 16) * 1rem);
+  padding-bottom: calc((4 / 16) * 1rem);
+  padding-left: calc((12 / 16) * 1rem);
   font-weight: 800;
 }
 
@@ -71,7 +163,7 @@ body {
 
 .title-text a {
   text-decoration: none;
-  font-size: 2.4rem;
+  font-size: calc((24 / 16) * 1rem);
   font-weight: 800;
 }
 
@@ -81,18 +173,18 @@ body {
 }
 
 .description-text {
-  font-size: 1.6rem;
+  font-size: calc((16 / 16) * 1rem);
   color: hsl(0, 0%, 42%);
 }
 
 .container-author {
   display: flex;
-  gap: 1.2rem;
+  gap: calc((12 / 16) * 1rem);
   align-items: center;
 }
 
 .author-img {
-  max-width: 3.2rem;
+  max-width: calc((32 / 16) * 1rem);
 }
 
 .name-text {
@@ -100,7 +192,7 @@ body {
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: calc((11 / 16) * 1rem);
   text-align: center;
 }
 .attribution a {
